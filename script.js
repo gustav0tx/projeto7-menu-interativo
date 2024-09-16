@@ -1,5 +1,5 @@
 let option = parseInt(prompt(` Escolha uma opção:\n 1:\n 2:\n 3:\n 4:\n 5: Encerrar`))
-while (option !== 5 ) {
+do {
 switch (option) {
     case 1:
         alert('1')
@@ -13,9 +13,9 @@ switch (option) {
     case 4:
         alert('Você escolheu a opção 4')
         break
-    default:
-        alert('Opçao Invalida')                    
+    case 5:
+        alert('selecione novamente para confirmar')                            
 }
-    option = parseInt(prompt(` Escolha uma opção:\n 1:\n 2:\n 3:\n 4:\n 5: Encerrar`)) 
-}
+option = parseInt(prompt(` Escolha uma opção:\n 1:\n 2:\n 3:\n 4:\n 5: Encerrar`))
+} while (option !== 5 )
 alert('Programa encerrado')
